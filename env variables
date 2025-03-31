@@ -1,0 +1,10 @@
+pipeline {
+    agent any
+    stages {
+        stage("this is to print") {
+            steps {
+                echo "my build id is: ${env.BUILD_ID}"
+            }
+        }
+    }
+}
